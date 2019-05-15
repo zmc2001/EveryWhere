@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.main.activity.AllCommentsActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_44"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/dp_20"
+        android:id="@+id/allcomments_tb">
+        
+        <ImageView
+            android:id="@+id/allcomments_back"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:src="@drawable/back_white"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所有评论"
+            android:textSize="@dimen/sp_16"
+            android:textColor="@color/c_333333"
+            android:layout_gravity="center"/>
+        
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:background="@drawable/gra_white_de"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_4"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/allcomments_rlv"
+        />
+    
+    <EditText
+        android:layout_below="@id/allcomments_rlv"
+        android:id="@+id/allcomments_et"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_54"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/edittext_kuang"
+        android:hint="说点什么..."
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"/>
+
+</LinearLayout>

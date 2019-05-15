@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.activity.DatumActivity">
+    
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_64"
+        android:id="@+id/datum_tb"
+        android:background="@color/white">
+        
+        <ImageView
+            android:id="@+id/datum_back"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:src="@drawable/back_white"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_24"/>
+        
+        <TextView
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_20"
+            android:text="@string/datum_head"
+            android:textSize="@dimen/dp_16"
+            android:textColor="@color/c_333333"
+            android:layout_gravity="center"/>
+        
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_below="@id/datum_tb"
+        android:background="@drawable/gra_white_de"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_4"/>
+    
+    <TextView
+        android:id="@+id/datum_tu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/datum_tujing"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/c_666666"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_below="@id/datum_tb"
+        />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="@dimen/dp_355"
+            android:layout_height="@dimen/dp_212"
+            app:cardCornerRadius="@dimen/dp_10"
+            android:id="@+id/card1"
+            android:layout_below="@id/datum_tb"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_50">
+
+            <RelativeLayout
+                android:id="@+id/datum_head_photo"
+                android:layout_width="@dimen/dp_355"
+                android:layout_height="@dimen/dp_50">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/datum_text_photo"
+                    android:textSize="@dimen/dp_14"
+                    android:textColor="@color/c_333333"
+                    android:layout_marginLeft="@dimen/dp_14"
+                    android:layout_marginTop="@dimen/dp_18"/>
+
+                <ImageView
+                    android:id="@+id/datum_head_photoo"
+                    android:layout_width="@dimen/dp_40"
+                    android:layout_height="@dimen/dp_40"
+                    android:src="@drawable/icon_me_kaquan_banmi2"
+                    android:layout_marginLeft="@dimen/dp_290"
+                    android:layout_marginTop="@dimen/dp_6"/>
+
+            </RelativeLayout>
+
+
+
+            <View
+                android:layout_width="@dimen/dp_327"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:background="@color/c_f0f0f0"/>
+
+            <RelativeLayout
+                android:id="@+id/datum_name"
+                android:layout_width="@dimen/dp_355"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_54">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/datum_text_name"
+                    android:textSize="@dimen/dp_14"
+                    android:textColor="@color/c_333333"
+                    android:layout_marginLeft="@dimen/dp_14"
+                    android:layout_marginTop="@dimen/dp_18"/>
+
+                <TextView
+                    android:id="@+id/datum_namee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/datum_name"
+                    android:textSize="@dimen/dp_14"
+                    android:textColor="@color/c_999"
+                    android:layout_marginRight="@dimen/dp_14"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dp_18"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/dp_327"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_105"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:background="@color/c_f0f0f0"/>
+
+            <RelativeLayout
+                android:id="@+id/datum_sex"
+                android:layout_width="@dimen/dp_355"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_110">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/datum_text_sex"
+                    android:textSize="@dimen/dp_14"
+                    android:textColor="@color/c_333333"
+                    android:layout_marginLeft="@dimen/dp_14"
+                    android:layout_marginTop="@dimen/dp_18"/>
+
+                <TextView
+                    android:id="@+id/datum_sexx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/datum_sex"
+                    android:textSize="@dimen/dp_14"
+                    android:textColor="@color/c_999"
+                    android:layout_marginLeft="@dimen/dp_313"
+                    android:layout_marginTop="@dimen/dp_18"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/dp_327"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_158"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:background="@color/c_f0f0f0"/>
+
+
+            <RelativeLayout
+                android:id="@+id/datum_autograph"
+                android:layout_width="@dimen/dp_355"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="@dimen/dp_165">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/datum_text_qianming"
+                    android:textSize="@dimen/dp_14"
+                    android:textColor="@color/c_333333"
+                    android:layout_marginLeft="@dimen/dp_14"
+                    android:layout_marginTop="@dimen/dp_16"/>
+
+                <TextView
+                    android:id="@+id/datum_autographh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/datum_qianming"
+                    android:textSize="@dimen/dp_14"
+                    android:textColor="@color/c_999"
+                    android:layout_marginRight="@dimen/dp_14"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/dp_16"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/datum_card2"
+        android:layout_width="@dimen/dp_355"
+        android:layout_height="@dimen/dp_111"
+        app:cardCornerRadius="@dimen/dp_10"
+        android:layout_below="@id/card1"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10">
+
+        <RelativeLayout
+            android:id="@+id/rl2"
+            android:layout_width="@dimen/dp_355"
+            android:layout_height="@dimen/dp_110"
+            android:background="@color/c_ffffff">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:text="@string/datum_gaimi"
+                android:textSize="@dimen/dp_14"
+                android:textColor="@color/c_333333"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:layout_marginTop="@dimen/dp_18"/>
+
+            <View
+                android:layout_width="@dimen/dp_320"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_53"
+                android:layout_marginLeft="@dimen/dp_17"
+                android:background="@color/c_f0f0f0"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:text="@string/datum_bangshou"
+                android:textSize="@dimen/dp_14"
+                android:textColor="@color/c_333333"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:layout_marginTop="@dimen/dp_72"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+    
+    <Button
+        android:layout_width="@dimen/dp_355"
+        android:layout_height="@dimen/dp_40"
+        android:layout_below="@id/datum_card2"
+        android:background="@drawable/datu_btn_jianbian"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_10"
+        android:text="@string/tuideng"
+        android:textColor="@color/c_ffffff"/>
+
+</RelativeLayout>

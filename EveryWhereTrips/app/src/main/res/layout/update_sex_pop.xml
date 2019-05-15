@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/update_sex_ll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:background="@color/c_33000000">
+
+    <Button
+        android:id="@+id/update_sex_man"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:text="@string/man"
+        android:textColor="@color/c_000000"
+        android:background="@color/white"/>
+
+    <Button
+        android:id="@+id/update_sex_girl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:text="@string/girl"
+        android:textColor="@color/c_000000"
+        android:background="@color/white"/>
+
+    <Button
+        android:id="@+id/update_sex_yao"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:text="@string/yao"
+        android:textColor="@color/c_000000"
+        android:background="@color/white"/>
+
+
+</LinearLayout>

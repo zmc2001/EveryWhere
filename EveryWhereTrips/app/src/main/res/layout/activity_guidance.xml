@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.activity.GuidanceActivity">
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/guidance_vp"/>
+
+    <com.example.admin.everywheretrips.util.PreviewIndicator
+        android:id="@+id/guide_pi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_60"
+        />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/guide_btn"
+        android:layout_width="@dimen/dp_127"
+        android:layout_height="@dimen/dp_40"
+        android:text="@string/tiyan"
+        android:textSize="@dimen/sp_15"
+        android:textColor="@color/c_ffffff"
+        android:background="@drawable/nav_head_jianbianfan"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_43"/>
+
+</RelativeLayout>

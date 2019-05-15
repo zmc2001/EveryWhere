@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/item_allcomments_photo"
+        android:layout_width="@dimen/dp_38"
+        android:layout_height="@dimen/dp_38"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_92"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/item_allcomments_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="海子"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/c_373737"
+        android:layout_marginLeft="@dimen/dp_69"
+        android:layout_marginTop="@dimen/dp_92"/>
+
+    <TextView
+        android:id="@+id/item_allcomments_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2017年2月08日"
+        android:textColor="@color/c_999"
+        android:textSize="@dimen/sp_10"
+        android:layout_marginLeft="@dimen/dp_68"
+        android:layout_marginTop="@dimen/dp_111"/>
+
+    <TextView
+        android:id="@+id/item_allcomments_spack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="14"
+        android:textColor="@color/c_999"
+        android:textSize="@dimen/sp_12"
+        android:layout_marginLeft="@dimen/dp_254"
+        android:layout_marginTop="@dimen/dp_100"/>
+
+    <ImageView
+        android:id="@+id/item_allcomments_ping"
+        android:layout_width="@dimen/dp_14"
+        android:layout_height="@dimen/dp_13"
+        android:src="@drawable/pinglun"
+        android:layout_marginLeft="@dimen/dp_275"
+        android:layout_marginTop="@dimen/dp_102"/>
+
+    <TextView
+        android:id="@+id/item_allcomments_zan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:textColor="@color/c_999"
+        android:textSize="@dimen/sp_12"
+        android:layout_marginLeft="@dimen/dp_320"
+        android:layout_marginTop="@dimen/dp_100"/>
+
+    <ImageView
+        android:id="@+id/item_allcomments_zanimg"
+        android:layout_width="@dimen/dp_14"
+        android:layout_height="@dimen/dp_13"
+        android:src="@drawable/zan"
+        android:layout_marginLeft="@dimen/dp_340"
+        android:layout_marginTop="@dimen/dp_102"/>
+
+    <TextView
+        android:id="@+id/item_allcomments_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="想在那边找人一起🚴逛逛"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/c_636363"
+        android:layout_marginLeft="@dimen/dp_68"
+        android:layout_marginTop="@dimen/dp_139"
+        />
+
+    <View
+        android:layout_below="@id/item_allcomments_content"
+        android:layout_width="@dimen/dp_306"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/c_dcdcdc"
+        android:layout_marginLeft="@dimen/dp_58"
+        android:layout_marginTop="@dimen/dp_20"/>
+
+</RelativeLayout>

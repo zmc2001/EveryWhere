@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/item_guideance_img"
+        android:src="@drawable/guide_01"/>
+
+    <TextView
+        android:id="@+id/guide_textone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/guide_textone"
+        android:textSize="@dimen/sp_30"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_100"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/guide_texttwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/guide_texttwo"
+        android:textSize="@dimen/sp_30"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_100"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/guide_textthree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/guide_textthree"
+        android:textSize="@dimen/sp_30"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_100"/>
+
+</RelativeLayout>
