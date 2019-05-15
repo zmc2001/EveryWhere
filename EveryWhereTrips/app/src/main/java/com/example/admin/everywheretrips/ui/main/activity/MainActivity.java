@@ -70,6 +70,7 @@ public class MainActivity extends BaseActivity<MainView, MainPresenter> implemen
 
     @Override
     protected void initView() {
+        String name = "的急啊离开酒店";
 
         StatusBarUtil.setLightMode(this);
 
